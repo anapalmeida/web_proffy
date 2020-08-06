@@ -7,9 +7,9 @@ import TeacherForm from './pages/TeacherForm'
 function Routers() {
   return (
     <Router>
-      <Route path="/" component={Landing} exact />
-      <Route path="/study" component={TeacherList} exact />
-      <Route path="/give-classes" component={TeacherForm} exact />
+      <Route path='/' component={Landing} exact />
+      <Route path='/study' component={TeacherList} exact />
+      <Route path='/give-classes' component={TeacherForm} exact />
     </Router>
   )
 }

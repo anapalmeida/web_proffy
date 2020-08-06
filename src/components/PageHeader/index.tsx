@@ -11,24 +11,25 @@ interface PageHeaderProps {
 
 const PageHeader: React.FunctionComponent<PageHeaderProps> = (props) => {
   return (
-    <header className="page-header">
+    <header className='page-header'>
 
 
-      <div className="top-bar-container">
+      <div className='top-bar-container'>
 
-        <Link to="/">
-          <img src={backIcon} alt="Voltar" />
+        <Link to='/'>
+          <img src={backIcon} alt='Voltar' />
         </Link>
 
-        <Link to="/">
-          <img className="logo" src={logoIcon} alt="Proffy" />
+        <Link to='/'>
+          <img className='logo' src={logoIcon} alt='Proffy' />
         </Link>
 
       </div>
 
 
-      <div className="header-content">
+      <div className='header-content'>
         <strong>{props.title}</strong>
+        {props.description && <p>{props.description}</p>}
 
         {props.children}
       </div>
